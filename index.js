@@ -2,6 +2,7 @@ const {Router} = require("express");
 const express = require("express");
 const controllers = require("./controller");
 const models = require("./bd/models");
+
 const user = models.user;
 const app = express();
 
@@ -18,7 +19,11 @@ Object.keys(controllers).forEach((controller) =>{
         app.use(router);
     }
 })
-
+user.findAll({
+    
+}).then((data) => {
+    console.log(data.map((item) => item.toJSON()));
+})
 user.create({caption: "Z", description:"Test"})
 
 //console.log(models);
