@@ -1,2 +1,2 @@
 # Learn_JS
-*_ Learning JS with  SACRED DEVELOPER _*
+*Learning JS with  SACRED DEVELOPER*
